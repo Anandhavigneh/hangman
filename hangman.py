@@ -12,7 +12,7 @@ print("Welcome to Hangman")
 
 while attempts > 0 and '-' in word_disply:
     print("\n" + ''.join(word_disply))
-    guess=input("guess a letter:").lower()
+    guess=input("guess a letter:\n").lower()
     if guess in chose_word:
         for index, letter in enumerate(chose_word):
             if letter==guess:
